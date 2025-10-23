@@ -7,12 +7,12 @@
     <title>Perry the Platypus</title>
 </head>
 <body>
-<div class="intro table">
+<div class="table">
     <div>
-        <figure>
+        <figure class="figure">
             <img class="main_img" src="images/perry-the-platypus-hat.gif" alt="Perry the Platypus">
-            <figcaption>
-                <button>Perry the Platypus is cool! &#128526;</button>
+            <figcaption class="figcaption">
+                <button class="button-perry">Perry the Platypus is cool! &#128526;</button>
             </figcaption>
         </figure>
     </div>
@@ -20,7 +20,7 @@
     <div>
         <h1>Perry the Platypus</h1>
         <div>
-            <blockquote>
+            <blockquote class="blockquote">
                 <p>In your letters, you described your nemesis as a 'suave, semi-aquatic personification of
                     unstoppable
                     dynamic fury'.</p>
@@ -34,12 +34,14 @@
     Perry the Platypus, also known as Agent P, is a unique and beloved superhero character from the
     animated series Phineas and Ferb.
     He is an anthropomorphic bipedal platypus who leads a secret double life as a spy working for the
-    espionage organization known as <abbr>O.W.C.A.</abbr> (Organization Without a Cool Acronym).
+    espionage organization known as <abbr title="Organization Without a Cool Acronym">O.W.C.A.</abbr>.
     While he appears as a simple pet to the Flynn-Fletcher family, Perry is a skilled secret agent who
     fights the evil scientist Dr. Heinz Doofenshmirtz and foils his schemes to take over the tri-state
     area.
-    And, of course, you could hear this awesome <a href="audio.html" target="_blank" rel="noopener noreferrer">theme
-    song!</a>
+    And, of course, you could hear this awesome theme song!
+    <audio class="audio-perry" controls>
+        <source src="audio/Perry_the_Platypus_-_Theme_(SkySound.cc).mp3" type="audio/mpeg">
+    </audio>
 </p>
 
 <div class="facts table">
@@ -134,20 +136,20 @@
 <hr>
 <div>
     <p><i>Join our funclub!</i></p>
-    <form action="/join-funclub" method="POST">
-        <label for="nickname">Your nickname:</label>
+    <form class="join-form" action="/join-funclub" method="POST">
+        <label class="label-form" for="nickname">Your nickname:</label>
         <input type="text" id="nickname" name="nickname" placeholder="Your nickname" required/>
 
-        <label for="email">Email:</label>
+        <label class="label-form" for="email">Email:</label>
         <input type="email" id="email" name="email" placeholder="your@email.com" required/>
 
-        <label for="age">Age:</label>
+        <label class="label-form" for="age">Age:</label>
         <input type="number" id="age" name="age" min="1" max="120" placeholder="Your age" required/>
 
-        <label for="interests">What do you like the most about Perry the Platypus?</label>
+        <label class="label-form" for="interests">What do you like the most about Perry the Platypus?</label>
         <textarea id="interests" name="interests" rows="4" placeholder="Tell us what you like"></textarea>
 
-        <label for="your_character">If you were a character in this movie, who would you be?</label>
+        <label class="label-form" for="your_character">If you were a character in this movie, who would you be?</label>
         <select id="your_character" name="your_character">
             <option value="Phineas">Phineas Flynn</option>
             <option value="Candace">Candace Flynn</option>
